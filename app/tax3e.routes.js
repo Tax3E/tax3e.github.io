@@ -4,10 +4,12 @@
         .module("tax3e")
         .config(routes);
     
-    routes.$inject = ["$stateProvider"];
+    routes.$inject = ["$stateProvider", "$urlRouterProvider"];
 
-    function routes($stateProvider) {
+    function routes($stateProvider, $urlRouterProvider) {
         
+        $urlRouterProvider.otherwise("/");
+
         $stateProvider
             .state("home", {
                 url: "/",
