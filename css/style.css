@@ -1117,3 +1117,7 @@ ul.meta-tags li:last-child:after { content: ' ' }
 .comment form { margin-top: -30px }
 .comment input,
 .comment textarea { margin-bottom: 15px }
+
+.content-area {
+    padding: 60px 0 0;
+}
