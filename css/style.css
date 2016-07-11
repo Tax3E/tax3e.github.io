@@ -1121,3 +1121,11 @@ ul.meta-tags li:last-child:after { content: ' ' }
 .content-area {
     padding: 60px 0 0;
 }
+
+.features li * {
+    cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

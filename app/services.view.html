@@ -12,20 +12,20 @@
                 <div class="col-md-4 col-md-offset-1"> <!-- tab menu col 4 -->
 
                     <ul class="features nav nav-pills nav-stacked" role="tablist">
-                        <li role="presentation" class="active">  <!-- feature tab menu #1 -->
-                            <a href="#f1" aria-controls="f1" role="tab" data-toggle="tab">
+                        <li role="presentation" ng-class="{ active : services.selected == 'business' }">  <!-- feature tab menu #1 -->
+                            <a ng-click="services.select('business')" role="tab" >
                                 <span class="fa fa-building"></span>
                                 Business<br>&nbsp;
                             </a>
                         </li>
-                        <li role="presentation"> <!-- feature tab menu #2 -->
-                            <a href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
+                        <li role="presentation" ng-class="{ active : services.selected == 'individual' }"> <!-- feature tab menu #2 -->
+                            <a ng-click="services.select('individual')" role="tab">
                                 <span class="fa fa-user"></span>
                                 Individual<br>&nbsp;
                             </a>
                         </li>
-                        <li role="presentation"> <!-- feature tab menu #3 -->
-                            <a href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
+                        <li role="presentation" ng-class="{ active : services.selected == 'international' }"> <!-- feature tab menu #3 -->
+                            <a ng-click="services.select('international')" role="tab">
                                 <span class="fa fa-globe"></span>
                                 International Taxation<br><small>in Canada</small>
                             </a>
@@ -37,7 +37,7 @@
                 <div class="col-md-6"> <!-- right content col 6 -->
                     <!-- Tab panes -->
                     <div class="tab-content features-content"> <!-- tab content wrapper -->
-                        <div role="tabpanel" class="tab-pane fade in active" id="f1"> <!-- feature #1 content open -->
+                        <div role="tabpanel" class="tab-pane fade in" ng-class="{ active : services.selected == 'business' }"> <!-- feature #1 content open -->
                             <h4>Business</h4>
                             <ul>
                                 <li>Business Registration</li>
@@ -50,9 +50,9 @@
                                 <li>Loss carry back and carry forward</li>
                                 <li>Planning the use of corporation and shareholder-manager renumeration</li>
                             </ul>
-                            <img src="img/tab01.png" class="img-responsive" alt="...">
+                            <img src="img/tab01.png" class="img-responsive">
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="f2"> <!-- feature #2 content -->
+                        <div role="tabpanel" class="tab-pane fade in" ng-class="{ active : services.selected == 'individual' }"> <!-- feature #2 content -->
                             <h4>Individual</h4>
                             <ul>
                                 <li>Employment income tax, employment & partnership relative expense claims & GST/HST rebates</li>
@@ -62,9 +62,9 @@
                                 <li>Home office expense deductions</li>
                                 <li>Automobile expense deductions</li>
                             </ul>
-                            <img src="img/tab02.png" class="img-responsive" alt="...">
+                            <img src="img/tab02.png" class="img-responsive">
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="f3"> <!-- feature #3 content -->
+                        <div role="tabpanel" class="tab-pane fade in" ng-class="{ active : services.selected == 'international' }"> <!-- feature #3 content -->
                             <h4>International Taxation</h4>
                             <ul>
                                 <li>Non-residents, part-year residents, emigration, international students</li>

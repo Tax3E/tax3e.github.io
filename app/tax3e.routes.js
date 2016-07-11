@@ -21,6 +21,7 @@
             })
             .state("services", {
                 url: "/services",
+                controller: "servicesController as services",
                 templateUrl: "app/services.view.html"
             })
             .state("tax-problems", {
