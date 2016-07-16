@@ -1129,3 +1129,15 @@ ul.meta-tags li:last-child:after { content: ' ' }
     -webkit-user-select: none;
     user-select: none;
 }
+
+.list-inline.cat * {
+    cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#itemsWorkThree .hover-bg {
+    border: 1px solid #ddd;
+}

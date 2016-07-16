@@ -30,6 +30,7 @@
             })
             .state("portfolio", {
                 url: "/portfolio",
+                controller: "portfolioController as portfolio",
                 templateUrl: "app/portfolio.view.html"
             })
             .state("links", {
